@@ -1,5 +1,5 @@
 function milesToKilometer(miles){
-    const kilometer = miles * 1.609;
+    const kilometer = miles * 1.609; // miles = 1.609
     return kilometer;
 }
 
