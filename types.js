@@ -298,5 +298,164 @@ for(var i = 0; i < numbers.length; i++){
     if(number > 60){
         break;
     }
-    console.log(number);
+    // console.log(number);
 }
+
+
+// for(var i = 0; i < numbers.length; i++){
+//     var number = numbers[1];
+//     if(number > 30){
+//         continue;
+//     }
+//     console.log(number);
+// }
+
+for(var i = 0; i < numbers.length; i++){
+    var number = numbers[i];
+    if(number > 30){
+        continue;
+    }
+    // console.log(number);
+}
+
+// recers way
+var num = 10;
+while(num > 0){
+    // console.log(num);
+    num--;
+}
+
+for(var i = 20; i >= 1; i--){
+    // console.log(i);
+   
+}
+
+// 1.....
+var moneGiven = 1000;
+var applePrice = 400;
+var orengprice = 300;
+var totlePrice = apple + oranges;
+// console.log(totlePrice);
+var giveBack = moneGiven - totlePrice;
+// console.log(giveBack);
+
+// 2.....
+var mathMarks = 75.25;
+var biologyMarks = 65;
+var ChemistryMarks = 80;
+var PhysicsMarks = 35.45;
+var banglaMarks = 99.50;
+var totleMarks = mathMarks + biologyMarks + ChemistryMarks +
+PhysicsMarks + banglaMarks;
+// console.log(totleMarks);
+var averse = totleMarks / 5;
+var averseTwoDecimal = averse.toFixed(2);
+// console.log(averseTwoDecimal);
+
+// 3......
+var firstLine = 'I am going to be';
+var secandLine = 'an awesome web developer';
+var fullLine = firstLine + ' ' + secandLine;
+// console.log(fullLine);
+// 4......
+var number = 119;
+var reminder = number % 5;
+// console.log(reminder);
+
+// 1.....
+var fruits = ['apple', 'banana', 'orengs'];
+var bananaIndex = fruits.indexOf('banana');
+fruits[bananaIndex] = 'mango';
+fruits.pop();
+// console.log(fruits);
+fruits.push('wateremelon')
+// console.log(fruits);
+
+// 2.....
+var num1 = 73;
+var num2 = 72;
+var num3 = 35;
+if(num1 > num2){
+    if(num1 > num3){
+        // console.log(num1);
+    }
+    else{
+        // console.log(num3);
+    }
+}
+else{
+    if(num2 > num3){
+    //    console.log(num2);
+    }
+    else{
+        // console.log(num3);
+    }
+}
+
+
+// function declaration
+// function startFan(){
+//     console.log('stant up');
+//     console.log('walk towards the switch');
+//     console.log('press the swith');
+// }
+// // call the function
+// startFan();
+// console.log('waking up the morning');
+// startFan();
+// console.log('Eating iunch');
+// console.log('wating js tutoria');
+// startFan();
+
+
+// paramiter function
+function bringSingara(money){
+    console.log('taka disen', money)
+    console.log('mama singara den');
+    // console.log(money);
+}
+
+var taka = 300;
+// bringSingara(taka);
+
+// function add(num1, num2){
+//     console.log('going to add:', num1, num2);
+// }
+
+// add(235, 565);
+
+function surm(a, b, c, d, e, ){
+    console.log(a, b, c, d, e, );
+    var surm = a + b + c + d + e;
+    console.log(surm);
+}
+
+// surm(12, 34, 43, 54, 45);
+// function add(number1, number2){
+//     // console.log(number1, number2);
+//     var sum = number1 + number2;
+//     return sum;
+// }
+
+// var totle = add(80, 20);
+// console.log('totle', totle);
+
+function bringSingara(money){
+    var singaraPrice = 10;
+    var quntity = money / singaraPrice;
+    return quntity;
+}
+
+var myTaka = 150;
+var singara = bringSingara(myTaka);
+// console.log('Eating singaras :', singara);
+
+function add(num1, num2){
+    const sum = num1 + num2;
+    return sum;
+}
+
+const result1 = add(23, 45);
+const result2 = add(12, 32);
+const finalResult = add(result1, result2);
+console.log(finalResult);
