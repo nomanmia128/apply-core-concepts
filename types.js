@@ -706,14 +706,101 @@
 // const fact = factaorial(9);
 // console.log('factiorial of 9:', fact);
 
-function factaorial(number){
-    let i = number;
-    let result = 1;
-    while( i >= 1){
-        result = result * i;
-        i--;
+// function factaorial(number){
+//     let i = number;
+//     let result = 1;
+//     while( i >= 1){
+//         result = result * i;
+//         i--;
+//     }
+//     return result;
+// }
+// const output = factaorial(7);
+// console.log('output of:', output);
+
+// function factaorial(number){
+//     let factaorial = 1;
+//     for(let i = 1; i <= number; i++){
+//         factaorial = factaorial * i;
+//         console.log(i, factaorial);
+//     }
+//     return factaorial;
+// }
+// const fact = factaorial(8);
+// console.log('factaorial of 8:', fact);
+
+// hours to convert minites
+// function hoursNumber(hour){
+//     const minit = hours * 60;
+//     return minit;
+// }
+// const hours = 2;
+// const minites = hoursNumber(hours);
+// console.log('Hours to convert 2 hours:', minites);
+
+// minit to convert second
+// function minitOfNumber(minit){
+//     const second = minit * 60;
+//     return second;
+// }
+
+// const minit = 4;
+// const secondes = minitOfNumber(minit);
+// console.log('minit converad to second:', secondes);
+
+// Leap year
+function getSumOfAnArray(yeares){
+    let sum = 0;
+    for(let i = 0; i < yeares.length; i++){
+        const index = i;
+        const element = yeares[index];
+        sum = sum + element;
+        // console.log(index, element, sum);
     }
-    return result;
 }
-const output = factaorial(7);
-console.log('output of:', output);
+
+function getYearsNumber(yeares){
+    const yearesNumbers = [];
+    for(let i = 0; i < yeares.length; i++){
+        const index = i;
+        const element = yeares[index];
+        if(element % 4 === 0){
+           console.log(index, element);
+           yearesNumbers.push(element);
+        }
+    }
+    return yearesNumbers;
+}
+
+const myYears = [2023, 2024, 2025, 2028, 2030];
+const yearesNumbers = getYearsNumber(myYears);
+console.log(yearesNumbers);
+getSumOfAnArray(myYears);
+// -----------------
+// function findLeapYear(years){
+//     const leapYearNumbers = [];
+//   for(let i = 0; i < years.length; i++){
+//     const reminder = years % 4;
+//      if(reminder % 2 === 0){
+//         console.log(reminder)
+//         leapYearNumbers.push(reminder);  
+//      }
+    
+//   }
+//    return leapYearNumbers;
+// }
+// const myYears = [2023, 2024, 2025, 2028, 2030];
+// const leapYearNumbers = findLeapYear(myYears);
+// console.log(leapYearNumbers);
+// ----------------------------
+// function isLeapYear (year){
+//     const remainder = year % 4;
+//     if(remainder == 0){
+//        return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+// const ismyLeapYear = isLeapYear(1933);
+// console.log('my year:', ismyLeapYear);
